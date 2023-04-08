@@ -1,0 +1,43 @@
+.body-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar li{
+    list-style: none;
+    padding: 4px;
+    width: 70%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+}
+
+/* .nav-list{
+    width: 70%;
+    /* background-color: black; 
+    display: flex;
+    align-items: center;
+} */
+
+.rightnav{
+    display: flex;
+    align-items: center;
+    /* background-color: blueviolet; */
+    width: 30%;
+    text-align: right;
+}
+
+.logo img{
+    width: 30%;
+}

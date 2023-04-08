@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width:33%;
+    border: 3px solid white;
+    border-radius: 50px;
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list{
+    width: 50%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-list li a:hover{
+    color: aqua;
+}
+
+.rightnav{
+    display: block;
+    align-items: center;
+    /* background-color: blueviolet; */
+    width: 30%;
+    text-align: right;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.background{
+    background: rgb(0, 0,0,0.7) url(../img/bg.jpg);
+    background-size: cover;
+    background-blend-mode:darken ;
+}
+
+.firstsection{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.secondhalf img{
+    width: 40%;
+    padding: 2px;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+}
+
+.firsthalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondhalf{
+    width: 30%;
+}
+
+.text-big{
+    font-size: 50px;
+}
+
+.text-small{
+    font-size: 25px;
+}
+
+.btn{
+    padding: 5px;
+    border-radius: 7px;
+    margin: 7px 0px;
+    border: 2px solid white;
+    background:none;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-sm{
+    padding: 5px 11px;
+    vertical-align: -webkit-baseline-middle;
+    margin-bottom: 16px;
+    margin-right: 10px;
+}
+
+.secRight{
+    /* height: 635px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+
+.section{
+    display: flex;
+    max-width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.secLeft{
+    /* height: 635px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    flex-direction: row-reverse;
+}
+
+.imgFluid{
+    width: 300%;
+    padding: 2px;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+}
+
+.secLeft img{
+    width: 300%;
+    padding: 2px;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    margin-left: -140px;
+}
+
+.contact{
+    background-color: #f6f5f4;
+    height: 40vh;
+}
+
+.text-center{
+    text-align: center;
+    padding: 12px;
+}
+
+.form{
+    width: 62%;
+    margin: 18px auto;
+}
+
+.form input{
+    margin: 15px 0px;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    width:33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width:1044px){
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .navbar{
+        height: 500px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+
+    .rightnav{
+        text-align: center;
+    }
+
+    #search{
+        width: 100%;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .h-nav-resp{
+        height: 52px;
+    }
+
+    .v-class{
+        opacity: 0;
+    }
+
+    .secRight{
+        flex-direction: column;
+    }
+
+    .imgFluid{
+        width: 30%;
+    }
+
+    .secLeft{
+        flex-direction: column;
+    }
+
+    .secLeft img{
+        width: 30%;
+        margin-left: auto;
+    }
+
+    .box-main{
+        flex-direction: column;
+    }
+    
+    .secondhalf img{
+        width: 70%;
+    }
+}
